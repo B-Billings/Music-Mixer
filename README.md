@@ -26,7 +26,7 @@ This is the submission file for Brody Billings and Saroj Sharma's first year sec
 ## Credits
 ***
 HTML markup/outline [W3C](https://validator.w3.org/)
-
+CSS Reset File http://meyerweb.com/eric/tools/css/reset/
 
 <br>
 
