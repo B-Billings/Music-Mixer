@@ -46,10 +46,19 @@ h2{
 	height: 600px;
     width: 90%;
 	display: inline-block;
-	border: medium solid rgb(255, 25, 25);
-	background-color: #000;
 	color: inherit;
 	overflow: hidden;
+	background-image: url('/images/music-mixer-panel.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.musicmaker img{
+display: inline-flex;
+margin-top: 436px;
+float: right;
+column-gap: -50px;
+margin-right: 180px;
 }
 
 header {
