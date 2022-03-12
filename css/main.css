@@ -1,97 +1,91 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 body {
-	margin: 0px;
-	border: 0px;
-	color:rgb(0, 0, 0);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:16px;
-	background-image: url('/images/music-mixer-mainBg.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+  margin: 0px;
+  border: 0px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url("/images/music-mixer-mainBg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-h2{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 2em;
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 2em;
 }
 
 #screens {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	width: 100%;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.instruments {
+  display: flex;
+  flex-direction: row;
+  border: medium solid rgb(255, 25, 25);
+  background-color: #000;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-.instruments{
-    display: flex;
-    justify-content: space-evenly;
-	margin-top: 10px;
-	height: 85px;
-    width: 90%;
-	border: medium solid rgb(255, 25, 25);
-	background-color: #000;
-	overflow: hidden;
-    cursor: pointer;
-    border-radius: 10px;
-
+.instrument {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  height: 85px;
+  width: 90%;
 }
-.instruments img{
-    border-radius: 10px;
-
+.instrument img {
+  border-radius: 10px;
 }
 
 .musicmaker {
-	margin-top: 40px;
-	height: 600px;
-    width: 90%;
-	display: inline-block;
-	color: inherit;
-	overflow: hidden;
-	background-image: url('/images/music-mixer-panel.png');
-	background-repeat: no-repeat;
-	background-position: center;
+  margin-top: 40px;
+  height: 600px;
+  width: 90%;
+  display: inline-block;
+  color: inherit;
+  overflow: hidden;
+  background-image: url("/images/music-mixer-panel.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.musicmaker img{
-display: inline-flex;
-margin-top: 436px;
-float: right;
-column-gap: -50px;
-margin-right: 180px;
+.drop {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-right: 180px;
+  align-items: center;
+}
+.dropZone {
+  border: medium solid black;
+  color: blue;
+  width: 75px;
+  height: 75px;
+  float: right;
 }
 
 header {
-	width:600px;
-	margin: 0px auto;
-	text-align: center;
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
 }
 
 header h1 {
-	font-size: 3.25em;
+  font-size: 3.25em;
   letter-spacing: 3px;
-	margin-top: 10px;
-    font-weight: 600;
+  margin-top: 10px;
+  font-weight: 600;
 }
 header p {
-	font-size: 1.75em;
+  font-size: 1.75em;
   letter-spacing: 2px;
-	margin-top: 10px;
-}
-
-#buttonloc {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-	margin: 10px auto;
-	text-align:center;
-    border: medium solid rgb(255, 25, 25);
-    border-radius: 10px;
-	background-color: #000;
-}
-
-#buttonloc img {
-	border-radius: 10px;
-	border: thin solid rgb(180, 55, 55);
-	cursor: pointer;
+  margin-top: 10px;
+  font-family: "Syne Mono", monospace;
 }
