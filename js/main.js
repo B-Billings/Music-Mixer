@@ -1,9 +1,7 @@
 (() => {
-
-    dropZones = document.querySelectorAll(".dropzone");
-
-    instrument = document.querySelectorAll(".instruments *");
-
+let musicboard = document.querySelector(".drops"),
+    instrument = document.querySelectorAll(".instruments *"),
+    dropZones = document.querySelectorAll(".drop-zone");
 
     function dragStarted(event) {
         console.log('started draginng a piece');
@@ -24,7 +22,7 @@
         let droppedEl = event.dataTransfer.getData('currentItem');
         console.log(droppedEl);
 
-        event.target.appendChild(document.querySelector(`#${droppedEl}`))
+        this.appendChild(document.querySelector(`#${droppedEl}`));
 
 
     }
