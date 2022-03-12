@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Will be adding a google font just have to decide on what one will fit well with the icons made -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Music Mixer</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<title>Music Mixer</title>
 </head>
+
 <body>
 	<header id="headLine">
 		<h1>MUSIC MIXER</h1>
 		<p>drag your instrument into any of the open slots to begin</p>
 	</header>
 	<section id="screens">
-        <h2>Instruments</h2>
+		<h2>Instruments</h2>
 		<div class="instruments">
-			<img src="images/music-mixer-drums.png"  alt=""> <!-- All SVG icons will go here-->
-			<img src="images/music-mixer-guitar.png"  alt="">
-			<img src="images/music-mixer-piano.png"  alt="">
-			<img src="images/music-mixer-triangle.png"  alt="">
+			<div class="instrument"><img src="images/music-mixer-drums.png" alt="ins 1" draggable="true" class="button"
+					id="ins1"> </div>
+			<!-- All SVG icons will go here-->
+			<div class="instrument"><img src="images/music-mixer-guitar.png" alt="ins 2" draggable="true" class="button"
+					id="ins2"></div>
+			<div class="instrument"><img src="images/music-mixer-piano.png" alt="ins 3" draggable="true" class="button"
+					id="ins3"></div>
+			<div class="instrument"><img id="ins4" src="images/music-mixer-triangle.png" alt="ins 4" draggable="true"
+					class="button"></div>
+			<div class="instrument"><img id="ins5" src="images/music-mixer-triangle.png" alt="ins 5" draggable="true"
+					class="button"></div>
 		</div>
 
 		<div class="musicmaker">
-            <!--This is where the backroung and interactivity will go-->
-			<img src="https://via.placeholder.com/75x75"  alt="">
-			<img src="https://via.placeholder.com/75x75"  alt="">
-            <img src="https://via.placeholder.com/75x75"  alt="">
-            <img src="https://via.placeholder.com/75x75"  alt="">
-        </div>
+		</div>
+		<!--This is where the backroung and interactivity will go-->
+
+		<div class="drop" id="zone">
+			<div class="dropZone" id="zone1"></div>
+			<div class="dropZone" id="zone2"></div>
+			<div class="dropZone" id="zone3"></div>
+			<div class="dropZone" id="zone4"></div>
+			<div class="dropZone" id="zone5"></div>
+		</div>
+
 	</section>
-    <h2>Drag to Play</h2>
-		<nav id="buttonloc"> <!-- This is the location for drag and drops for right now may change -->
-			<img src="https://via.placeholder.com/75x75"  alt="">
-			<img src="https://via.placeholder.com/75x75"  alt="">
-            <img src="https://via.placeholder.com/75x75"  alt="">
-            <img src="https://via.placeholder.com/75x75"  alt="">
-		</nav>
-	<script src="script/main.js"></script>
+
+	<audio src=""></audio>
+
+	<script src="js/main.js"></script>
 </body>
+
 </html>
