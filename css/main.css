@@ -33,15 +33,16 @@ h2 {
   border-radius: 10px;
 }
 
-.instrument {
+.instruments {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
   height: 85px;
-  width: 90%;
+  width: 70%;
 }
-.instrument img {
+.instruments img {
   border-radius: 10px;
+  scale: 50%;
 }
 
 .musicmaker {
@@ -56,19 +57,26 @@ h2 {
   background-position: center;
 }
 
-.drop {
+.drops {
   display: flex;
   flex-direction: row;
-  gap: 90px;
-  margin-right: 180px;
   align-items: center;
+  text-align: center;
+  margin-top: 435px;
+  margin-left: 638px;
+  max-width: 36%;
 }
-.dropZone {
-  border: medium solid black;
-  color: blue;
-  width: 75px;
-  height: 75px;
-  float: right;
+
+.drop-zone {
+	width: 49.5%;
+  height: 49.5%;
+  float: left;
+	position: relative;
+}
+.drop-zone img {
+	float: none;
+	position: absolute;
+	padding: 0;
 }
 
 header {
