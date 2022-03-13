@@ -1,7 +1,7 @@
 const musicboard = document.querySelector("#buttonHolder img"),
     instrument = document.querySelectorAll('.instruments *'),
-    dropZones = document.querySelectorAll(".drop-zone");
-    
+    dropZones = document.querySelectorAll(".drop-zone"),
+    Audio = document.querySelector("audio");
 
     function allowdrag(event) {
         event.dataTransfer.setData('currentItem', event.target.id);
@@ -15,15 +15,21 @@ const musicboard = document.querySelector("#buttonHolder img"),
         event.preventDefault();
         console.log('dropped on me')
 
-        if (this.childElementCount == 1) {return; }
+       
     
         let droppedEl = event.dataTransfer.getData('currentItem');
         console.log(droppedEl);
 
-        event.target.appendChild(document.querySelector(`#${droppedEl}`))
+        event.target.appendChild(document.querySelector(`#${droppedEl}`));
+
+        playsound(droppedEl);
 
         
 
+    }
+    function playsound(event){
+        document.getElementById('audio').play();
+        
     }
     
    
