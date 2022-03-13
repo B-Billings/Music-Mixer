@@ -52,7 +52,7 @@ h2 {
   display: inline-block;
   color: inherit;
   overflow: hidden;
-  background-image: url(/images/music-mixer-panel.png);
+  background-image: url("/images/music-mixer-panel.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -68,15 +68,13 @@ h2 {
 }
 
 .drop-zone {
-	width: 49.5%;
-  height: 49.5%;
+  width: 75px;
+  height: 75px;
   float: left;
-	position: relative;
-}
-.drop-zone img {
-	float: none;
-	position: absolute;
-	padding: 0;
+  position: relative;
+  gap: 30px;
+  border: medium solid rgb(255, 25, 25);
+  background-color: #000;
 }
 
 header {
