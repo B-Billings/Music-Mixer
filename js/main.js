@@ -1,37 +1,34 @@
-(() => {
-let musicboard = document.querySelector(".drops"),
-    instrument = document.querySelectorAll(".instruments *"),
+const musicboard = document.querySelector("#buttonHolder img"),
+    instrument = document.querySelectorAll('.instruments *'),
     dropZones = document.querySelectorAll(".drop-zone");
+    
 
-    function dragStarted(event) {
-        console.log('started draginng a piece');
+    function allowdrag(event) {
         event.dataTransfer.setData('currentItem', event.target.id);
 
     }
-    function allowDragOver(event) {
+    function allowDragOver(event){
         event.preventDefault();
         console.log('dragged over me');
     }
-    function allowDrop(event) {
+    function allowDrop(event){
         event.preventDefault();
         console.log('dropped on me')
 
-        if (this.childElementCount == 1) { return; }
-
-
+        if (this.childElementCount == 1) {return; }
+    
         let droppedEl = event.dataTransfer.getData('currentItem');
         console.log(droppedEl);
 
-        this.appendChild(document.querySelector(`#${droppedEl}`));
+        event.target.appendChild(document.querySelector(`#${droppedEl}`))
 
+        
 
     }
-
-    instrument.forEach(piece => piece.addEventListener("dragstart", dragStarted));
+    
+   
+    instrument.forEach(piece => piece.addEventListener("dragstart", allowdrag));
 
     dropZones.forEach(zone => zone.addEventListener('dragover', allowDragOver));
 
     dropZones.forEach(zone => zone.addEventListener('drop', allowDrop));
-
-
-})

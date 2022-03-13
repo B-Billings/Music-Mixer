@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	
 	<header id="headLine">
 		<h1>MUSIC MIXER</h1>
 		<p>drag your instrument into any of the open slots to begin</p>
@@ -19,34 +20,35 @@
 	<section id="screens">
 		<h2>Instruments</h2>
 		<div class="instruments">
-			<img id= "instrument1" draggable = "true" src="images/music-mixer-drums.png" class="inst-image" alt="drums" >
-
+			<img id= "instrument1" draggable = "true"  src="images/music-mixer-drums.png" class="inst-image" alt="drums">
+			
 			<img id= "instrument2" draggable = "true" src="images/music-mixer-guitar.png" class="inst-image" alt="guitar">
-
+		
 			<img id= "instrument3" draggable = "true" src="images/music-mixer-piano.png" class="inst-image" alt="piano" >
-
-			<img id= "instrument4" draggable = "true" id="ins4" src="images/music-mixer-triangle.png" class="inst-image" alt="triangle">
-
-			<img id= "instrument5" draggable = "true" id="ins5" src="images/music-mixer-bass.png" class="inst-image" alt="Bass">
-
+		
+			<img id= "instrument4" draggable = "true" src="images/music-mixer-triangle.png" class="inst-image" alt="triangle">
+			
+			<img id= "instrument5" draggable = "true" src="images/music-mixer-triangle.png" class="inst-image" alt="havent made a choice">
+			
 		</div>
 
 		<div class="musicmaker">
 
-		<div class="drops">
-			<div class="drop-zone 1"> <img src="https://via.placeholder.com/75x75" alt=""></div>
-			<div class="drop-zone 2"> <img src="https://via.placeholder.com/75x75" alt=""></div>
-			<div class="drop-zone 3"> <img src="https://via.placeholder.com/75x75" alt=""></div>
-			<div class="drop-zone 4"><img src="https://via.placeholder.com/75x75" alt=""></div>
-			<div class="drop-zone 5"><img src="https://via.placeholder.com/75x75" alt=""></div>
-		</div>
+			<div class="drops" id="">
+				<div class="drop-zone" id="zone1"> </div>
+				<div class="drop-zone" id="zone2"> </div>
+				<div class="drop-zone" id="zone3"> </div>
+				<div class="drop-zone" id="zone4"> </div>
+				<div class="drop-zone" id="zone5"> </div>
+			</div>
 		</div>
 
 	</section>
 
-	<audio src=""></audio>
+	<audio id="audio" class="audioLoops" src="assets/drums.mp3"></audio>
 
-	<script src="js/main.js"></script>
+	<script src="js/main.js">
+	</script>
 </body>
 
 </html>
