@@ -11,8 +11,8 @@
 	<title>Music Mixer</title>
 </head>
 
-<body>
-	
+<body class="maincon">
+
 	<header id="headLine">
 		<h1>MUSIC MIXER</h1>
 		<p>drag your instrument into any of the open slots to begin</p>
@@ -20,19 +20,24 @@
 	<section id="screens">
 		<h2>Instruments</h2>
 		<div class="instruments">
-			<img id= "instrument1" draggable = "true"  src="images/music-mixer-drums.png" class="inst-image" alt="drums" >
-			
-			<img id= "instrument2" draggable = "true" src="images/music-mixer-guitar.png" class="inst-image" alt="guitar">
-		
-			<img id= "instrument3" draggable = "true" src="images/music-mixer-piano.png" class="inst-image" alt="piano" >
-		
-			<img id= "instrument4" draggable = "true" src="images/music-mixer-triangle.png" class="inst-image" alt="triangle">
-			
-			<img id= "instrument5" draggable = "true" src="images/music-mixer-triangle.png" class="inst-image" alt="havent made a choice">
-			
+			<img data-bgref="0" id= "instrument1" draggable = "true"  src="images/music-mixer-drums.png" class="inst-image" alt="drums" >
+
+			<img data-bgref="1"id= "instrument2" draggable = "true" src="images/music-mixer-guitar.png" class="inst-image" alt="guitar">
+
+			<img data-bgref="2"id= "instrument3" draggable = "true" src="images/music-mixer-piano.png" class="inst-image" alt="piano" >
+
+			<img data-bgref="3"id= "instrument4" draggable = "true" src="images/music-mixer-triangle.png" class="inst-image" alt="triangle">
+
+			<img data-bgref="4"id= "instrument5" draggable = "true" src="images/music-mixer-bass.png" class="inst-image" alt="havent made a choice">
+
 		</div>
 
-		<div class="musicmaker">
+		<section class="musicmaker">
+	<div class="audiocntrl">
+<button id="playbtn">PLAY</button>
+<button id="pausebtn">STOP</button>
+<button id="rewindbtn">REWIND</button>
+	</div>
 
 			<div class="drops" id="">
 				<div class="drop-zone" id="zone1"> </div>
@@ -41,16 +46,17 @@
 				<div class="drop-zone" id="zone4"> </div>
 				<div class="drop-zone" id="zone5"> </div>
 			</div>
-		</div>
+		</section>
 
 	</section>
 
-	<audio id="audio" loop src="audio/music_mixer_drums.wav"></audio>
-	<audio id="audio" loop src="audio/music_mixer_drums.wav"></audio>
-	<audio id="audio" loop src="audio/music_mixer_drums.wav"></audio>
-	<audio id="audio" loop src="audio/music_mixer_drums.wav"></audio>
+	<audio data-bgref="0" id="audio" loop src="audio/music_mixer_drums.wav"></audio>
+	<audio data-bgref="1" id="audio1" loop src="audio/music_mixer_guitar.wav"></audio>
+	<audio data-bgref="2" id="audio2" loop src="audio/music_mixer_piano.wav"></audio>
+	<audio data-bgref="3" id="audio3" loop src="audio/music_mixer_triangle.wav"></audio>
+	<audio data-bgref="4" id="audio4" loop src="audio/music_mixer_bass.wav"></audio>
 
-	
+
 
 
 	<script src="js/main.js">

@@ -6,9 +6,14 @@ body {
   color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background-image: url("/images/music-mixer-mainBg.jpg");
+  background-image: url("../images/music-mixer-mainBg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.maincon{
+  max-width: 1400px;
+  margin: auto;
 }
 h2 {
   text-align: center;
@@ -43,6 +48,8 @@ h2 {
 .instruments img {
   border-radius: 10px;
   scale: 50%;
+  max-width: 81px;
+  max-height: 81px;
 }
 
 .musicmaker {
@@ -52,27 +59,25 @@ h2 {
   display: inline-block;
   color: inherit;
   overflow: hidden;
-  background-image: url("/images/music-mixer-panel.png");
+  background-image: url("../images/music-mixer-panel.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .drops {
-  display: flex;
-  flex-direction: row;
+  display: inline=flex;
   align-items: center;
   text-align: center;
-  margin-top: 435px;
-  margin-left: 638px;
-  max-width: 36%;
+  margin-top: 415px;
+  margin-left: 36%;
+  max-width: 50%;
 }
 
 .drop-zone {
   width: 75px;
   height: 75px;
-  float: left;
-  position: relative;
-  gap: 30px;
+  display: inline-block;
+  margin-right: 30px;
   border: medium solid rgb(255, 25, 25);
   background-color: #000;
 }
@@ -94,4 +99,36 @@ header p {
   letter-spacing: 2px;
   margin-top: 10px;
   font-family: "Syne Mono", monospace;
+}
+
+#instrument1 {
+  height: 81px;
+}
+#instrument2 {
+  height: 81px;
+}
+#instrument3 {
+  height: 81px;
+}
+#instrument4 {
+  height: 81px;
+}
+#instrument5 {
+  height: 81px;
+}
+
+#zone1{
+  margin-left: -10px;
+}
+
+#zone2{
+  margin-left: 20px;
+}
+
+#zone3{
+  margin-left: 10px;
+}
+
+#zone4{
+  margin-left: 20px;
 }
