@@ -12,7 +12,7 @@ body {
 }
 
 .maincon{
-  max-width: 1400px;
+  width: 1400px;
   margin: auto;
 }
 h2 {
@@ -60,17 +60,19 @@ h2 {
   color: inherit;
   overflow: hidden;
   background-image: url("../images/music-mixer-panel.png");
+  background-size: 1260px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .drops {
-  display: inline=flex;
+  display: block;
+  position: static;
   align-items: center;
   text-align: center;
-  margin-top: 415px;
-  margin-left: 36%;
-  max-width: 50%;
+  margin-top: 335px;
+  margin-left: 31%;
+  max-width: 60%;
 }
 
 .drop-zone {
@@ -81,6 +83,7 @@ h2 {
   border: medium solid rgb(255, 25, 25);
   background-color: #000;
 }
+
 
 header {
   width: 600px;
@@ -122,7 +125,7 @@ header p {
 }
 
 #zone2{
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 #zone3{
@@ -130,5 +133,41 @@ header p {
 }
 
 #zone4{
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.audiocntrl{
+  margin-left: 60px;
+}
+.audiocntrl button{
+  margin-top: 35px;
+  padding: 15px;
+  margin-left: 10px;
+  width: 61px;
+  height: 61px;
+  border: 0px;
+  padding: 0px;
+  background-color: #6d6e71;
+  cursor: pointer;
+}
+
+#playbtn{
+  background-image: url("../images/play.png");
+  background-size: 61px 61px;
+  align-items: center;
+
+}
+
+#stopbtn{
+  background-image: url("../images/stop.png");
+  background-size: 61px 61px;
+  align-items: center;
+
+}
+
+#rewindbtn{
+  background-image: url("../images/rewind.png");
+  background-size: 61px 61px;
+  align-items: center;
+
 }
