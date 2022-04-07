@@ -1,9 +1,9 @@
-# Music Mixer 
+# Music Mixer
 
 This is the submission file for Brody Billings and Saroj Sharma's first year second term Music Mixer assignment in Multi Media Authoring.
-<br> 
+<br>
 
-The theme choses was to go with a retro wave style using lgoqing pinks and blues making it feel "old school tech" the instruments and music will also follow this theme
+The theme choses was to go with a retro wave style using glowing pinks and blues making it feel "old school tech" the instruments and music will also follow this theme
 
 [Google Docs link for planning and progress](https://docs.google.com/document/d/10OrOwPVMTjP12NxyzyDk_14DqMr0o6piv5HbEK9-CYg/edit?usp=sharing)
 <br>
