@@ -1,10 +1,13 @@
 const musicboard = document.querySelector("#buttonHolder img"),
     instrument = document.querySelectorAll('.instruments *'),
     dropZones = document.querySelectorAll(".drop-zone"),
-    Audio = document.querySelector("audio"),
+    Audio = document.querySelectorAll("audio *"),
     playbtn= document.getElementById('playbtn'),
     pausebtn= document.getElementById('stopbtn'),
-    rewindbtn= document.getElementById('rewindbtn');
+    rewindbtn= document.getElementById('rewindbtn'),
+    dragL = document.querySelector(".instruments"),
+    AudioEl = document.querySelectorAll("audio");
+
 
     function allowdrag(event) {
         event.dataTransfer.setData('currentItem', event.target.id);
@@ -37,16 +40,16 @@ const musicboard = document.querySelector("#buttonHolder img"),
 
 
     function playsound(){
-        
+
         }
-        
-    
+
+
 
     function pausesound(){
         var sounds= document.getElementsByTagName("audio");
         for (i=0; i<sounds.length; i++ ) sounds[i].pause();
         console.log('paused')
-       
+
     }
 
     function rewindsound(){
@@ -56,13 +59,12 @@ const musicboard = document.querySelector("#buttonHolder img"),
     }
 
     function resetbtn(){
-        input.value = "";
-        console.log(input.value);
-        reset_button.disabled = true;
-        dragArea.classList.remove('active')
-        
-       
-        
+      dropZones.forEach(zone => {
+			if (zone.childElementCount > 0) {
+				dragL.appendChild(zone.firstElementChild);
+			}
+		})
+    AudioEl.forEach(el => el.pause());
     }
 
     instrument.forEach(piece => piece.addEventListener("dragstart", allowdrag));
@@ -70,5 +72,3 @@ const musicboard = document.querySelector("#buttonHolder img"),
     dropZones.forEach(zone => zone.addEventListener('dragover', allowDragOver));
 
     dropZones.forEach(zone => zone.addEventListener('drop', allowDrop));
-
-
