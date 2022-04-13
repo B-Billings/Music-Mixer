@@ -11,6 +11,7 @@ The theme choses was to go with a retro wave style using glowing pinks and blues
 <img src="images/music-mixer-mainBg.jpg" height="200">
 <br>
 </p>
+
 ## Installation
 
 ***
